@@ -1,0 +1,44 @@
+<html>
+    <head>
+     
+        <meta charset="utf-8">
+       
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+      
+        <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+
+        <title>SongBase</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="indie2">
+                <p id="submenu">Register to get your music</p>
+            </div>
+
+            <div id="authentication">
+                <form id="signInForm" name="signIn" onSubmit="formValidationSignIn()">
+                    <input id="usernameReg" type="text" name="usernameReg" placeholder="Username">
+                    <input id="passwordReg" type="password" name="passwordReg" placeholder="Password">
+                    <input id="passwordConfReg" type="password" name="passwordRegConf" placeholder="Confirm Password">
+                    <input class="submitBtn" type="submit" name="submit" value="Registrieren">
+                </form>
+            </div>
+
+            <div id="toSign">
+                 <button class="toSign" type="button" onclick="toView4_Log()">to SignUp</button>
+                 <button class="toSign" type="button" onclick="toView4_Reg()">to SignIn</button>
+            </div>
+
+            <button id="next" type="button" onclick="toView5()">Next</button>
+            <img id="view" src="../img/v4.png" alt="view">
+        </div>
+        
+
+    </body>
+</html>
